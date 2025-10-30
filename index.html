@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo nhóm mới</title>
+    <link rel="stylesheet" href="taoforum.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="app_header">
+        <div class="logo">
+             <img src="bee.png" alt="Bee Logo" class="logo">
+        </div>
+        <nav class="main_nav">
+            <a href="#">
+                <i class="fa-solid fa-chart-simple"></i>
+                TRENDING
+            </a>
+            <a href="#" class="active"> <i class="fa-regular fa-comment"></i>
+                MY FORUM
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Search
+            </a>
+            <a href="#" class="profile_link">
+                <span class="profile_placeholder"></span>
+                PROFILE
+            </a>
+        </nav>
+    </header>
+
+    <main class="create_forum_container">
+
+        <div class="form_card">
+            <h2>Tạo nhóm</h2>
+            <form id="create_forum_form">
+                <input type="text" id="forum_tag" placeholder="Tag">
+                <input type="text" id="forum_name" placeholder="Tên forum">
+                <input type="text" id="forum_members" placeholder="Thêm thành viên">
+                
+                <input type="file" id="forum_image_upload" accept="image/*" style="display: none;">
+                <label for="forum_image_upload" class="file_upload_label">Ảnh nền</label>
+
+                <button type="submit" class="submit_button">Tạo</button>
+            </form>
+        </div>
+
+        <div class="preview_container">
+            <h2>Xem trước ảnh forum</h2>
+            
+            <div class="preview_card">
+                <div class="preview_header">
+                    <div class="preview_forum_icon"></div>
+                    <span class="preview_forum_name" id="preview_name_target">Tên forum</span>
+                    <button class="join_button">Tham gia</button>
+                    <i class="fa-solid fa_ellipsis"></i>
+                </div>
+
+                <div class="preview_body">
+                    <input type="text" class="preview_text" placeholder="Caption">
+                    <div class="preview_image_placeholder">
+                        <span id="preview_placeholder_text">Image</span>
+                        <img id="preview_image_target" src="" alt="Ảnh xem trước">
+                    </div>
+                </div>
+
+                <div class="preview_footer">
+                    <button class="action_button like_button">Like</button>
+                    <button class="action_button comment_button">Comment</button>
+                    <button class="action_button share_button">Share</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    
+    <script src="taoforum.js"></script>
+</body>
+</html>
