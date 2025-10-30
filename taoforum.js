@@ -6,14 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Lấy các phần tử cần tương tác ---
     
     // Từ form bên trái
-    const form = document.getElementById('create-forum-form');
-    const forumNameInput = document.getElementById('forum-name');
-    const imageUploadInput = document.getElementById('forum-image-upload');
+    const form = document.getElementById('create_forum_form');
+    const forumNameInput = document.getElementById('forum_name');
+    const imageUploadInput = document.getElementById('forum_image_upload');
     
     // Từ khung xem trước bên phải
-    const previewNameTarget = document.getElementById('preview-name-target');
-    const previewImageTarget = document.getElementById('preview-image-target');
-    const previewPlaceholderText = document.getElementById('preview-placeholder-text');
+    const previewNameTarget = document.getElementById('preview_name_target');
+    const previewImageTarget = document.getElementById('preview_image_target');
+    const previewPlaceholderText = document.getElementById('preview_placeholder_text');
 
     
     // --- Thêm các trình lắng nghe sự kiện ---
